@@ -1,0 +1,67 @@
+# PHP
+config/database.php
+config/local.php
+*.php.bak
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+logs/
+*.log
+npm-debug.log
+
+# Uploads
+uploads/
+files/
+temp/
+
+# Dependencies
+node_modules/
+vendor/
+composer.lock
+package-lock.json
+
+# Build files
+dist/
+build/
+.sass-cache/
+
+# System
+.DS_Store
+Thumbs.db
+*~
+*.swp
+
+# Backups
+*.bak
+*.backup
+*.sql.bak
+
+# Cache
+.cache/
+.tmp/
+
+# Session
+session/*
+!session/.gitkeep
+
+# OS
+.AppleDouble
+.LSOverride
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.fseventsd
