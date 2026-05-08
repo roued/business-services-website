@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تأجير السيارات | Business Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-briefcase"></i>
+                        <span>خدمات الأعمال</span>
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">الرئ��سية</a></li>
+                    <li><a href="services.html">الخدمات</a></li>
+                    <li><a href="car-rental.html" class="active">تأجير السيارات</a></li>
+                    <li><a href="maintenance.html">مراكز الصيانة</a></li>
+                    <li><a href="about.html">عننا</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                    <li class="auth-links">
+                        <a href="login.html" class="btn-login">دخول</a>
+                        <a href="register.html" class="btn-register">تسجيل</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb">
+        <div class="container">
+            <a href="index.html">الرئيسية</a> / <span>تأجير السيارات</span>
+        </div>
+    </section>
+
+    <!-- Car Rental Section -->
+    <section class="car-rental-section">
+        <div class="container">
+            <h1>تأجير السيارات</h1>
+            
+            <!-- Search and Filter -->
+            <div class="search-filter">
+                <div class="filter-group">
+                    <label>نوع السيارة</label>
+                    <select id="car-type-filter" class="filter-select">
+                        <option value="">جميع الأنواع</option>
+                        <option value="sedan">سيدان</option>
+                        <option value="suv">SUV</option>
+                        <option value="coupe">كوبيه</option>
+                        <option value="van">فان</option>
+                        <option value="truck">شاحنة</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>السعر (للليلة)</label>
+                    <input type="range" id="price-range" min="0" max="1000" value="1000">
+                    <span id="price-display">0 - 1000 ريال</span>
+                </div>
+            </div>
+
+            <!-- Cars Grid -->
+            <div class="cars-grid" id="cars-grid">
+                <!-- Will be loaded by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>عن الموقع</h4>
+                    <p>منصة متكاملة لتقديم جميع خ��مات الأعمال في مكان واحد</p>
+                </div>
+                <div class="footer-section">
+                    <h4>الخدمات</h4>
+                    <ul>
+                        <li><a href="#">الأنظمة الإدارية</a></li>
+                        <li><a href="#">تصميم الجرافيك</a></li>
+                        <li><a href="#">التسويق الإلكتروني</a></li>
+                        <li><a href="#">الخدمات المحاسبية</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>تواصل معنا</h4>
+                    <p><i class="fas fa-phone"></i> +966 1 234 5678</p>
+                    <p><i class="fas fa-envelope"></i> info@business-services.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> الرياض، المملكة العربية السعودية</p>
+                </div>
+                <div class="footer-section">
+                    <h4>تابعنا</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 جميع الحقوق محفوظة | خدمات الأعمال المتكاملة</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/car-rental.js"></script>
+</body>
+</html>
